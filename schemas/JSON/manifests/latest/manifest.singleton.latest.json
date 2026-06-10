@@ -147,7 +147,7 @@
       },
       "maxItems": 2,
       "uniqueItems": true,
-      "description": "The installer supported operating system"
+      "description": "The installer supported operating system (FIXME: Windows.Desktop is assumed if not present?)"
     },
     "MinimumOSVersion": {
       "type": [ "string", "null" ],
@@ -230,7 +230,7 @@
         "user",
         "machine"
       ],
-      "description": "Scope indicates if the installer is per user or per machine"
+      "description": "Scope indicates if the installer is per user or per machine (FIXME: And if not present?)"
     },
     "InstallModes": {
       "type": [ "array", "null" ],
@@ -369,7 +369,7 @@
         "uninstallPrevious",
         "deny"
       ],
-      "description": "The upgrade method"
+      "description": "The upgrade method (FIXME: the default if not present is?)"
     },
     "Commands": {
       "type": [ "array", "null" ],
@@ -626,7 +626,7 @@
         "elevationProhibited",
         "elevatesSelf"
       ],
-      "description": "The installer's elevation requirement"
+      "description": "The installer's elevation requirement (FIXME: The default if not present is?)"
     },
     "InstallationMetadata": {
       "type": "object",
@@ -698,7 +698,7 @@
         "uninstaller",
         "installer"
       ],
-      "description": "The repair method"
+      "description": "The repair method (FIXME: The behavior if not present is?)"
     },
     "ArchiveBinariesDependOnPath": {
       "type": [ "boolean", "null" ],
